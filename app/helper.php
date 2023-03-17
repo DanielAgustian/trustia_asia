@@ -20,5 +20,5 @@ function set_active_sidebar($uri, $output = ' active')
 }
 
 function versioning(){
-    return '?v=1.0.0';
+    return '?v=1.1.0';
 }

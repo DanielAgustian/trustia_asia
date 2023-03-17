@@ -38,8 +38,8 @@ var swiper = new Swiper(".swiperHomeProd", {
             spaceBetween: 40
         },
         1440:{
-            slidesPerView: 7,
-            spaceBetween: 45
+            slidesPerView: 6,
+            spaceBetween: 50
         }
     }
 });

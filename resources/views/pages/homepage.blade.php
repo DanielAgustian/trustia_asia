@@ -35,7 +35,7 @@
             </a>
             <div class="swiper swiperBanner mt-5">
                 <div class="swiper-wrapper">
-                    @for ($i = 1; $i <= 5; $i++)
+                    @for ($i = 1; $i <= 9; $i++)
                         <div class="swiper-slide">
                             <img src="{{ asset('image/homepage/banner/home-' . $i . '.png') }}" alt=""
                                 class="w-100">
