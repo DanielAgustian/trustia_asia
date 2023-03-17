@@ -4,7 +4,7 @@
 @endsection
 
 @section('css')
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.5/swiper-bundle.min.css" />
 @endsection
 
 @section('content')
@@ -13,36 +13,40 @@
         <div class="container__text position-relative">
             <div class="container">
                 <div class="inner-padd"></div>
-                <h2 class="text-white mb-4 fw-700">Align our materals to <br>
-                    meet your needs.</h2>
-                <div class="row align-items-center mb-5">
+                <h2 class="text-white mb-4 fw-700">Align our materials to your <br> requirements.</h2>
+                <div class="row align-items-start mb-5">
                     <div class="col-md-6">
-                        <p class="text-white mb-0">Trustia Asia Corporation is a experienced general trade company
-                            and a marketing company of Ace Jaya Corporation (Indonesia).
+                        <p class="text-white mb-0">Trustia Asia Corporation is an experienced general trade company and sales
+                            & marketing arm for Ace Jaya Corporation (Indonesia).
+
                             <br>
                             <br>
-                            Domiciled in Singapore with export and import trading business for several important
-                            commodities.
+                            Trustia Asia Corporation is a Singapore-based company, engages in export and import trading for
+                            a wide range of commodities.
+
                             <br>
                             <br>
-                            We distribute commodities that are important for the survival of its country and its people
-                            where
-                            some countries find it difficult to get these commodities.
+                            We provide commodities that are essential and beneficial to the development of its country and
+                            its people in regions. Where these commodities are challenging to obtain.
+
                         </p>
                     </div>
                     <div class="col-md-6 mt-md-0 mt-3">
                         <p class="text-white mb-0">
-                            We deal with small and medium-sized commodites; <br>
-                            <strong>Urea AUS 40, Urea, Liquid Ammonia, Coal, Sorghum Wood Pellets, Coffee Bean, Adblue, TAC
-                                low
-                                bioret</strong>
-
+                            We specialize with small and medium-sized commodities. <br>
+                            <strong>
+                                ACE AUS 32, ACE AUS 40, ACE AUS 50, TAC Low Biuret, TAC Standard Biuret, and Coffee Beans.
+                            </strong>
                             <br><br>
-                            With spirit and a great team, we have helped many of our clients that come from overseas; <br>
-                            <strong>Japan, Singapore, Thailand, Malaysia, Korea, America, Europe, and we will continue to
-                                help
-                                other
-                                countries.</strong>
+                            We have fulfilled many of our international customers with enthusiasm and a superb team. Our
+                            services have mostly assisted <strong> Japan, Singapore, Thailand, Malaysia, Korea, America, and
+                                Europe </strong>, and we will continue to provide these services.
+
+                            <!--With spirit and a great team, we have helped many of our clients that come from overseas; <br>-->
+                            <!--Japan, Singapore, Thailand, Malaysia, Korea, America, Europe, and we will continue to-->
+                            <!--    help-->
+                            <!--    other-->
+                            <!--    countries.-->
                         </p>
 
 
@@ -63,30 +67,30 @@
                 </div>
                 <h2 class="text-white mb-5 fw-700">Vision & Mission</h2>
                 <div class="row ">
-                    <div class="col-md-6 mb-lg-0 mb-3">
+                    <div class="col-lg-6 col-md-6 mb-lg-0 mb-3">
                         <div class="card card-vision">
                             <div class="card-body">
                                 <h4 class=" fw-700 mb-3" style="color: #333333">Vision</h4>
                                 <p class="text-paragraph">
-                                    Over the years, our company has achieved constant growth.
-                                    Our vision and mission has allowed us to obtain trust from overseas.
+                                    Our company vision statement has earned us customers recognition and trust. Thus that we
+                                    can keep on growing steadily throughout future.
                                     <br>
                                     <br>
-                                    Our vision is to be committed to provide the best service and quality,
-                                    so that we will continue to expand to all countries in the world.
+                                    <strong>
+                                        To contribute in the acceleration of the world's transition to environmentally
+                                        friendly energy</strong>
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-lg-0 mb-3">
+                    <div class="col-lg-6 col-md-6 mb-lg-0 mb-3">
                         <div class="card card-vision">
                             <div class="card-body">
                                 <h4 class=" fw-700 mb-3" style="color: #333333">Mission</h4>
                                 <p class="text-paragraph">
-                                    Our mission is to distribute basic commodities to the countries. But, not only for
-                                    business but also as a form of humanity to facilitate supply to several countries that
-                                    are having difficulty getting essential commodities for the survival of the country and
-                                    its people.
+                                    Our mission is to provide essential commodities to emerging economies. <br>
+                                    In addition to serving businesses, at the same time to assist various countries in
+                                    obtaining essential commodities for the future of the country and its people.
                                 </p>
                             </div>
                         </div>
@@ -106,34 +110,31 @@
             Our Product
         </h2>
         <div class="d-flex justify-content-center mb-4">
-            <p style="max-width: 700px; color: #1C3472" class="text-center">We define a 'high-quality' product not just as a product that is
+            <p style="max-width: 700px; color: #1C3472" class="text-center">We define a 'high-quality' product not just as a
+                product that is
                 safe and is built of high-quality components, but as a product that is consistent in its quality. </p>
         </div>
         <div class="row justify-content-center mb-5 no-gutters">
             @foreach ($prods as $item)
                 @component('components.card.card-about-product')
                     @slot('img')
-                        {{asset('image/about-us/icon/'.$item->image.'.svg') }}
-                    @endslot    
+                        {{ asset('image/about-us/icon/' . $item->image . '.svg') }}
+                    @endslot
                     @slot('title')
-                        {{$item->title}}
+                        {{ $item->title }}
                     @endslot
                     @slot('desc')
-                        {{$item->desc}}
+                        {{ $item->desc }}
                     @endslot
-                @endcomponent    
-
+                @endcomponent
             @endforeach
         </div>
-        <img src="{{asset('image/about-us/about-us-big.png')}}" alt="" class="w-100 ">
+        <img src="{{ asset('image/about-us/about-us-big.png') }}" alt="" class="w-100 ">
         <div class="inner-padd"></div>
     </div>
-
-
 @endsection
 
 @section('js')
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script>
         var swiper = new Swiper(".swiperAbout", {
@@ -145,6 +146,7 @@
             },
             spaceBetween: 10,
             loop: true,
+            loopFillGroupWithBlank: true,
             breakpoints: {
                 // when window width is >= 320px
                 350: {

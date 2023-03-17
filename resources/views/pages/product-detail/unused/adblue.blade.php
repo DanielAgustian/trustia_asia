@@ -4,7 +4,7 @@
 @endsection
 
 @section('css')
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.5/swiper-bundle.min.css" />
 @endsection
 
 @section('content')
@@ -48,9 +48,9 @@
             monoxide emissions by 50% to 90%, and particulate emissions by 30% to 50%.
         </p>
         <h5 class="txt__head mt-4 mb-2">Merk : JSJ AdBlue & J-BLUE OITA Aus 40 </h5>
-        
 
-        
+
+
         <div class="row mt-5">
             <div class="col-lg-12 ">
                 <div class="row">
@@ -94,7 +94,8 @@
                 @foreach ($listProds as $item)
                     <div class="swiper-slide">
                         <a href="/product/detail/{{ $item->image }}" class="link-product">
-                            <img src=" {{ asset('image/product/list/' . $item->image . '.png') }}" alt="">
+                            <img src=" {{ asset('image/product/list/' . $item->image . '.png') . versioning() }}"
+                                alt="">
                             <p class="swiper_para mb-0 mt-2">{{ $item->title }}</p>
                         </a>
 
@@ -110,7 +111,6 @@
 @endsection
 
 @section('js')
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script>
         var swiper = new Swiper(".swiperHomeProd", {

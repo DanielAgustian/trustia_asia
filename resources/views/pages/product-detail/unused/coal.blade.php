@@ -4,7 +4,7 @@
 @endsection
 
 @section('css')
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.5/swiper-bundle.min.css" />
 @endsection
 
 @section('content')
@@ -15,7 +15,9 @@
         <div class="row ">
             <div class="col-lg-8 col-md-6 order-2 order-md-1">
                 <p class="text-paragraph text-justify mb-5">
-                    Coal is a combustible black or brownish-black sedimentary rock, formed as rock strata called coal seams. Coal is mostly carbon with variable amounts of other elements, chiefly hydrogen, sulfur, oxygen, and nitrogen
+                    Coal is a combustible black or brownish-black sedimentary rock, formed as rock strata called coal seams.
+                    Coal is mostly carbon with variable amounts of other elements, chiefly hydrogen, sulfur, oxygen, and
+                    nitrogen
                 </p>
                 <div class="row justify-content-center">
                     @for ($i = 1; $i < 4; $i++)
@@ -32,12 +34,12 @@
             </div>
         </div>
         <h5 class="txt__head mt-4 mb-4">Information</h5>
-       
 
 
 
 
-        <p class="text__gray text-justify mb-0"> Coal sold from low calorie to high calorie.  <br>
+
+        <p class="text__gray text-justify mb-0"> Coal sold from low calorie to high calorie. <br>
             Available from :</p>
         <ul class="text-paragraph list__detail">
             <li>Gar 4200</li>
@@ -48,10 +50,10 @@
             <li> Gar 5500.
             </li>
         </ul>
-        
 
-        
-        
+
+
+
     </div>
     <div class="section-product mt-5">
         <div class="container pt-2">
@@ -82,7 +84,8 @@
                 @foreach ($listProds as $item)
                     <div class="swiper-slide">
                         <a href="/product/detail/{{ $item->image }}" class="link-product">
-                            <img src=" {{ asset('image/product/list/' . $item->image . '.png') }}" alt="">
+                            <img src=" {{ asset('image/product/list/' . $item->image . '.png') . versioning() }}"
+                                alt="">
                             <p class="swiper_para mb-0 mt-2">{{ $item->title }}</p>
                         </a>
 
@@ -98,7 +101,6 @@
 @endsection
 
 @section('js')
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script>
         var swiper = new Swiper(".swiperHomeProd", {

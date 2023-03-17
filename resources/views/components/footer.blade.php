@@ -16,7 +16,7 @@
                         <img src="{{ asset('image/logo-white.png') }}" alt="" class="w-100">
                     </a>
                     <p class="mt-3 footer__text">
-                        Trustia Asia Corporation is a experienced general trade company and a marketing company of Ace
+                        Trustia Asia Corporation is an experienced general trade company and a marketing company of Ace
                         Jaya Corporation (Indonesia).
                     </p>
                 </div>
@@ -28,9 +28,9 @@
                     </h5>
                     <div class="d-flex mx-4 mx-md-0">
                         <p><i class="fa-solid fa-location-dot"></i></p>
-                        
+
                         <p class="ms-4 info">
-                            <strong>Singapore Office</strong> 
+                            <strong>Singapore Office</strong>
                             <br>
                             1 Coleman Street #10-06
                             <br>
@@ -38,21 +38,30 @@
                             <br>
                             <br>
                             <strong>Japan Office</strong>
-                            
+
                             <br>
+                            Osaka <br>
                             Yoshikawa Building 6F, 9-3 Motomachi 1
                             <br>
-                            Chome Naniwa-ku, Osaka, Japan (556-0016)
+                            Chome Naniwa-ku, Osaka, Japan 556-0016
+                            <br>
+                            <br>
+
+
+                            Indonesia Office <br>
+                            Petireman 1 Cirebon, West Java, Indonesia <br>
+                            SOHO BSD Office, Tangerang, Indonesia
+
                         </p>
                     </div>
-                    
+
                     <div class="d-flex mx-4 mx-md-0">
                         <p><i class="fa-solid fa-phone"></i></p>
-                        <p class="ms-3 info">65-12345678</p>
+                        <p class="ms-3 info">+65 601 50 601</p>
                     </div>
                     <div class="d-flex mx-4 mx-md-0 ">
                         <p><i class="fa-solid fa-envelope"></i></p>
-                        <p class="ms-3 info">admin@trustia.com</p>
+                        <p class="ms-3 info">admin@trustia.com.sg</p>
                     </div>
                 </div>
                 <!-- Grid column -->
@@ -62,20 +71,20 @@
                         Company
                     </h5>
                     <p>
-                        <a href="{{route('homepage')}}" class="text-reset info">Home</a>
+                        <a href="{{ route('homepage') }}" class="text-reset info">Home</a>
                     </p>
                     <p>
-                        <a href="{{route('aboutUs')}}" class="text-reset info">About Us</a>
+                        <a href="{{ route('aboutUs') }}" class="text-reset info">About Us</a>
                     </p>
-                    
+
                     <p>
-                        <a href="{{route('ourProduct')}}" class="text-reset info">Our Product</a>
-                    </p>
-                    <p>
-                        <a href="{{route('ourPartner')}}" class="text-reset info">Our Partners</a>
+                        <a href="{{ route('ourProduct') }}" class="text-reset info">Our Product</a>
                     </p>
                     <p>
-                        <a href="{{route('contactUs')}}" class="text-reset info">Contact Us</a>
+                        <a href="{{ route('ourPartner') }}" class="text-reset info">Our Partners</a>
+                    </p>
+                    <p>
+                        <a href="{{ route('contactUs') }}" class="text-reset info">Contact Us</a>
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -87,14 +96,18 @@
                         Our Social Media
                     </h5>
                     <div class="d-flex d-md-block justify-content-center justify-content-md-start">
-                        <div class="socmed__div d-flex justify-content-between align-items-end" >
-                            <a href="" ><img src="{{asset('image/socmed/ig-icon.svg')}}" alt="" class="link_socmed"></a>
-                            <a href="" ><img src="{{asset('image/socmed/fb-icon.svg')}}" alt="" class="link_socmed"></a>
-                            <a href="" ><img src="{{asset('image/socmed/linkedin-icon.svg')}}" alt="" class="link_socmed"></a>
-                            <a href="" ><img src="{{asset('image/socmed/twitter-icon.svg')}}" alt="" class="link_socmed"></a>
+                        <div class="socmed__div d-flex justify-content-between align-items-end">
+                            <a href=""><img src="{{ asset('image/socmed/ig-icon.svg') }}" alt=""
+                                    class="link_socmed"></a>
+                            <a href=""><img src="{{ asset('image/socmed/fb-icon.svg') }}" alt=""
+                                    class="link_socmed"></a>
+                            <a href=""><img src="{{ asset('image/socmed/linkedin-icon.svg') }}" alt=""
+                                    class="link_socmed"></a>
+                            <a href=""><img src="{{ asset('image/socmed/twitter-icon.svg') }}" alt=""
+                                    class="link_socmed"></a>
                         </div>
                     </div>
-                    
+
                 </div>
                 <!-- Grid column -->
 
@@ -103,12 +116,12 @@
                 <!-- Grid column -->
             </div>
             <!-- Copyright -->
-            <div class="text-md-start text-center copyright mt-1" >
+            <div class="text-md-start text-center copyright mt-1">
                 2022 • Copyright Trustia Asia Corporation
             </div>
         </div>
-        
+
     </section>
-   
+
 </footer>
 <!-- Footer -->

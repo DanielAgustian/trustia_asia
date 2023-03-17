@@ -18,3 +18,7 @@ function set_active_sidebar($uri, $output = ' active')
    }
  }
 }
+
+function versioning(){
+    return '?v=1.0.0';
+}

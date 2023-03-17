@@ -16,11 +16,11 @@ use App\Http\Controllers\PageController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/', [PageController::class, 'homepage'])->name('homepage');
-Route::get('/home', [PageController::class, 'homepage'])->name('homepage');
-Route::get('/about-us', [PageController::class, 'aboutUs'])->name('aboutUs');
-Route::get('/our-partner', [PageController::class, 'ourPartner'])->name('ourPartner');
-Route::get('/our-product', [PageController::class, 'ourProduct'])->name('ourProduct');
-Route::get('/contact-us', [PageController::class, 'contactUs'])->name('contactUs');
+Route::get('/dxdiag', [PageController::class, 'homepage'])->name('homepage');
+Route::get('/dxdiag/home', [PageController::class, 'homepage'])->name('homepage');
+Route::get('/dxdiag/about-us', [PageController::class, 'aboutUs'])->name('aboutUs');
+Route::get('/dxdiag/our-partner', [PageController::class, 'ourPartner'])->name('ourPartner');
+Route::get('/dxdiag/our-product', [PageController::class, 'ourProduct'])->name('ourProduct');
+Route::get('/dxdiag/contact-us', [PageController::class, 'contactUs'])->name('contactUs');
 
-Route::get('/product/detail/{slug}', [PageController::class, 'productDetail'])->name('productDetail');
+Route::get('/dxdiag/product/detail/{slug}', [PageController::class, 'productDetail'])->name('productDetail');

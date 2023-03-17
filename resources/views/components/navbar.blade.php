@@ -1,7 +1,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light  navbar__blue d-lg-block d-none fixed-top">
     <div class="container">
 
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="{{route('homepage')}}">
             <img src="{{ asset('image/logo.svg') }}" alt="" class="logo__navbar">
         </a>
 
@@ -18,7 +18,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link {{set_active_sidebar('ourProduct')}}" href="{{route('ourProduct')}}">Our Product</a>
+                        <a class="nav-link {{set_active_sidebar('productDetail')}} {{set_active_sidebar('ourProduct')}}" href="{{route('ourProduct')}}">Our Product</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{set_active_sidebar('ourPartner')}}" href="{{route('ourPartner')}}">Our Partners</a>
@@ -49,7 +49,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light  navbar__blue d-lg-none d-block">
     <div class="container">
 
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="{{route('homepage')}}">
             <img src="{{ asset('image/logo.svg') }}" alt="" class="logo__navbar">
         </a>
 

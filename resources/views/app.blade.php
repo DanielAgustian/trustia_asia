@@ -11,8 +11,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ asset('favicon/site.webmanifest') }}">
     <!-- Fonts -->
-    <link href="http://fonts.cdnfonts.com/css/mulish" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('asset/css/style.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+
+    <link rel="stylesheet" href="{{ asset('asset/css/style.css') }}?v=1.0.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -41,6 +42,8 @@
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.5/swiper-bundle.min.js" integrity="sha512-ox3xCWNzq3G1a72+HsDsfYmcw2p7B+P3R8B33pjMQnxw3mEIc/oSuU0Is6Ti+KpKQcWoWVuYV2KhAJBYP+qhsw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{{asset('asset/js/js.js')}}?v={{versioning()}}"></script>
     @yield('js')
 </body>
 

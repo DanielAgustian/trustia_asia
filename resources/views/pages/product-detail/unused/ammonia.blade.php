@@ -4,7 +4,7 @@
 @endsection
 
 @section('css')
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.5/swiper-bundle.min.css" />
 @endsection
 
 @section('content')
@@ -75,10 +75,10 @@
                                     °C</td>
 
                             </tr>
-                            
+
                             <tr>
                                 <td class="grey__text">• Boiling point </th>
-                                <td class="blue__text">-28.17 ° F  <br>
+                                <td class="blue__text">-28.17 ° F <br>
                                     -33.43 ° C</td>
                                 <td class="blue__text">°F <br>
                                     °C</td>
@@ -93,9 +93,9 @@
             </div>
         </div>
         <h5 class="txt__head mt-5">User & Safety Information</h5>
-       
+
         <ul class="text__gray list__detail">
-            
+
 
 
 
@@ -115,7 +115,7 @@
 
         </ul>
 
-       
+
     </div>
     <div class="section-product mt-5">
         <div class="container pt-2">
@@ -146,7 +146,8 @@
                 @foreach ($listProds as $item)
                     <div class="swiper-slide">
                         <a href="/product/detail/{{ $item->image }}" class="link-product">
-                            <img src=" {{ asset('image/product/list/' . $item->image . '.png') }}" alt="">
+                            <img src=" {{ asset('image/product/list/' . $item->image . '.png') . versioning() }}"
+                                alt="">
                             <p class="swiper_para mb-0 mt-2">{{ $item->title }}</p>
                         </a>
 
@@ -162,7 +163,6 @@
 @endsection
 
 @section('js')
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script>
         var swiper = new Swiper(".swiperHomeProd", {

@@ -4,7 +4,7 @@
 @endsection
 
 @section('css')
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.1.5/swiper-bundle.min.css" />
 @endsection
 
 @section('content')
@@ -131,8 +131,9 @@
             <div class="swiper-wrapper">
                 @foreach ($listProds as $item)
                     <div class="swiper-slide">
-                        <a href="/product/detail/{{$item->image}}" class="link-product">
-                            <img src=" {{ asset('image/product/list/' . $item->image . '.png') }}" alt="">
+                        <a href="/product/detail/{{ $item->image }}" class="link-product">
+                            <img src=" {{ asset('image/product/list/' . $item->image . '.png') . versioning() }}"
+                                alt="">
                             <p class="swiper_para mb-0 mt-2">{{ $item->title }}</p>
                         </a>
 
@@ -148,7 +149,7 @@
 @endsection
 
 @section('js')
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  
 
     <script>
         var swiper = new Swiper(".swiperHomeProd", {

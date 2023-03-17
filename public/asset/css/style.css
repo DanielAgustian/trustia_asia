@@ -225,7 +225,7 @@ h1.title {
     padding-top: 40px;
     padding-bottom: 40px;
 }
-.belt__asli h2 {
+.belt__asli h3, .belt__asli h2 {
     color: black;
     font-weight: 700;
     text-align: center;
@@ -342,6 +342,8 @@ h1.title {
 }
 .swiperHomeProd img {
     width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 6px 12px;
+    border-radius: 12px;
     aspect-ratio: 1;
 }
 .btn-arrow {
@@ -489,13 +491,18 @@ h1.title {
     padding: 15px 5px;
 }
 .table__detail .blue__text{
-    color: #1C3472;
+    color: #1C3472 !important;
 }
 .table__detail .grey__text{
     color: #333333;
 }
 
-
+.table__detail .table-striped tbody > tr:nth-child(odd){
+    background-color: #DBE5FF66;
+}
+.table-striped .table-striped tbody > tr:nth-child(even){
+    background-color: white;
+}
 .list__detail{
     margin-top: 5px;
  
@@ -525,6 +532,12 @@ h1.title {
 .div-coffee .list__detail{
     margin-bottom: 10px !important;
     font-size: 15px  !important;
+}
+.storage__list li:not(:last-child) { 
+    margin-bottom: 15px  
+ }
+.disadvantage__box{
+    background: #DBE5FF66;
 }
 @media screen and (max-width: 996px) {
     .logo__navbar {
@@ -557,6 +570,9 @@ h1.title {
     .img__prods__list{
         margin-bottom: 15px;
     }
+    .storage__list li:not(:last-child) { 
+        margin-bottom: 12px  
+     }
 }
 
 @media screen and (max-width: 450px) {
@@ -618,7 +634,11 @@ h1.title {
     .img__detail{
         margin-bottom: 25px;
         margin-top: 15px;
+        max-width: 300px;
     }
+    .storage__list li:not(:last-child) { 
+        margin-bottom: 9px  
+     }
 }
 
 @media screen and (max-width: 400px) {
@@ -628,4 +648,7 @@ h1.title {
     .card-team .bg__logic {
         padding: 8px;
     }
+    .storage__list li:not(:last-child) { 
+        margin-bottom: 8px  
+     }
 }
