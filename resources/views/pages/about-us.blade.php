@@ -55,11 +55,14 @@
                 </div>
                 <div class="swiper swiperAbout ">
                     <div class="swiper-wrapper">
-                        @for ($i = 1; $i <= 4; $i++)
+                        @for ($i = 1; $i <= 9; $i++)
                             <div class="swiper-slide">
-                                <img src="{{ asset('image/about-us/about-us-' . $i . '.png') }}" alt="">
+                                <img src="{{ asset('image/homepage/banner/home-' . $i . '.png') }}" alt=""
+                                    class="w-100">
+
                             </div>
                         @endfor
+
 
 
                     </div>
@@ -135,7 +138,6 @@
 @endsection
 
 @section('js')
-
     <script>
         var swiper = new Swiper(".swiperAbout", {
             slidesPerView: 1,
